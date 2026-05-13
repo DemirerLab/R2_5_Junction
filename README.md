@@ -14,7 +14,7 @@ conda env create -f r2_junctionseq.yaml   # creates r2_junctionseq
 
 ## Step 1: File organization
 
-The workflow requires one FASTQ file per replicate from ONT amplicon sequencing, along with the transgene insert sequence and the 25S rDNA reference sequence. The insert and rDNA reference files are provided in this repository as *insert.fasta* and *rDNA.fasta*, respectively. Our four replicate *N. benthamiana* FASTQ files are available at [SRA](https://www.ncbi.nlm.nih.gov/sra) under accession **PRJNA1463879**. To be compatible with the workflow your directory should look like this:
+The workflow requires one FASTQ file per replicate from ONT amplicon sequencing, along with the transgene insert sequence and the 25S rDNA reference sequence. The insert and rDNA reference files are provided in this repository as *insert.fasta* and *rDNA.fasta*, respectively. Our three replicate *N. benthamiana* FASTQ files are available at [SRA](https://www.ncbi.nlm.nih.gov/sra) under accession **PRJNA1463879**. To be compatible with the workflow your directory should look like this:
 
 ```
 - R2-5J-classification-main/ (name of this folder can be changed)
@@ -27,7 +27,6 @@ The workflow requires one FASTQ file per replicate from ONT amplicon sequencing,
 │   │   └── 1.fastq
 │   │   └── 2.fastq
 │   │   └── 3.fastq
-│   │   └── 4.fastq
 │   ├── cutadapt_filtered/
 │   ├── classified/
 ```
